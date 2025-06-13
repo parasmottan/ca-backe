@@ -12,9 +12,8 @@ const io = new Server(server, {
   cors: {
     origin: 'https://ca-front-paras-projects-3b2b1deb.vercel.app', // ✅ Ye daalna hai
     methods: ['GET', 'POST'],
-  }
+  }
 });
-
 
 io.on('connection', (socket) => {
   console.log('User connected:', socket.id);
