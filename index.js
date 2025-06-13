@@ -10,7 +10,10 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://ca-front-paras-projects-3b2b1deb.vercel.app', // ✅ Ye daalna hai
+origin: [
+      'https://ca-front-paras-projects-3b2b1deb.vercel.app',
+      'https://ca-front-ten.vercel.app'
+    ],
     methods: ['GET', 'POST'],
   }
 });
